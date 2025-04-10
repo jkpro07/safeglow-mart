@@ -1,0 +1,169 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffbe7;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Logo styling */
+.logo {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 1em 0 0.5em;
+  color: #222;
+}
+
+.logo span {
+  color: #ff6600;
+}
+
+/* Navigation */
+nav {
+  background-color: #ffcc00;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.5em 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0.5em 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 0.5em 0;
+  }
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(to right, #ffb347, #ffcc33);
+  text-align: center;
+  padding: 4em 1em;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  background-color: #ff6600;
+  color: white;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #ffcc00;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+}
+
+/* Products grid */
+.products h2 {
+  text-align: center;
+  margin-top: 2em;
+  color: #ff6600;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+  margin: 2em 0;
+}
+
+.product {
+  background: #fff6d5;
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+/* Contact form */
+.contact-form {
+  max-width: 600px;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5em;
+  margin-top: 0.3em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  margin-top: 1.5em;
+  background-color: #ff6600;
+  color: white;
+  padding: 0.75em;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #e65c00;
+}
+
+/* Testimonials and FAQs */
+.testimonial, .faq {
+  background-color: #fff6d5;
+  margin: 1.5em 0;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
